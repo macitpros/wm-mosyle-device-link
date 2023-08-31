@@ -7,4 +7,4 @@ Clicking the "View in Mosyle" button will take you to the corresponding computer
 
 You can install the plugin and plist file manually by copying to `/Library/MonitoringClient/Plugins`
 
-Or you can use this installer pkg: TODO
+Or you can use the installer pkg [here](https://github.com/macitpros/wm-mosyle-device-link/blob/master/Build/mosyle-integration-link.pkg)
