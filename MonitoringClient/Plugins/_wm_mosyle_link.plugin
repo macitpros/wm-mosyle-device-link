@@ -1,0 +1,42 @@
+#!/bin/zsh
+
+# PLUGIN: WM Mosyle Device Link Plugin
+# AUTHOR: DAN MONGE @MACITPROS
+# DATE:   AUG/31/2023
+
+# If Mosyle LaunchAgent does not exist, exit without running
+if [ ! -f /Library/LaunchAgents/com.mosyle.macos.mdm.agent.plist ]; then
+    exit 25
+fi
+
+# Variables
+# Get computer UUID
+CID="$(ioreg -d2 -c IOPlatformExpertDevice | awk -F\" '/IOPlatformUUID/{print $(NF-1)}')"
+# Set Mosyle base URL to open the device in a browser
+BASEURL="https://mybusiness.mosyle.com/#device_"
+# Build the URL to the device
+DEVICEURL=$BASEURL$CID
+
+if [[ -n "$MC_PLUGIN_TEMP_DIR" ]]; then
+	shellHelperPath='/Library/MonitoringClient/Utilities/shell_helpers'
+else
+	shellHelperPath='/Users/Shared/Development/client-mac/Client/MonitoringClient/Utilities/shell_helpers'
+fi
+scriptArgs=("${@}")
+
+# Shell helper to use metadata in zsh
+. "$shellHelperPath"
+
+### Drop the metadata to build the button
+
+addMetadata \
+	--identifier "mosyle_link" \
+	--name  "View in Mosyle" \
+	--datatype "integration_link" \
+	--value "$DEVICEURL" \
+	--visible  True
+
+### Finish up by filing the report plists
+fileReports
+
+exit 0
