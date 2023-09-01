@@ -2,7 +2,7 @@
 
 This plugin is used to create an integration link in the Watchman Monitoring dashboard
 
-<img width="461" alt="Capture_2023-08-31_02-20-26_PM" src="https://github.com/macitpros/wm-mosyle-device-link/assets/17754199/a2b005f7-b5c5-4237-90fd-7c7767af0917">
+<img width="372" alt="Capture_2023-09-01_06-12-08_AM" src="https://github.com/macitpros/wm-mosyle-device-link/assets/17754199/3e3f884a-90f4-435b-afa5-6ea7b73b6f17">
 
 Clicking the "View in Mosyle" button will take you to the corresponding computerDevice Information window Mosyle's Dashboard.
 
