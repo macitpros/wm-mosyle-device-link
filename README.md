@@ -9,3 +9,6 @@ Clicking the "View in Mosyle" button in the Watchman Monitoring dashboard will t
 You can install the plugin and plist file manually by copying to `/Library/MonitoringClient/Plugins`
 
 Or you can use the installer pkg [here](https://github.com/macitpros/wm-mosyle-device-link/blob/master/Build/mosyle-integration-link.pkg)
+
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
