@@ -9,7 +9,7 @@
 	<key>PluginUUID</key>
 	<string>BFCF32C8-505D-4C9A-8B15-08A62F6406FB</string>
 	<key>PluginVersion</key>
-	<string>1.0.0.0</string>
+	<string>1.0.0.1</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>_wm_mosyle_link.plugin</string>
