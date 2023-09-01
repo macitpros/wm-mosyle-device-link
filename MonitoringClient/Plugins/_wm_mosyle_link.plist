@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>PluginName</key>
-	<string>_mosyle_link</string>
+	<string>Mosyle</string>
 	<key>PluginSlug</key>
 	<string>mosylelink</string>
 	<key>PluginUUID</key>
